@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Diary</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f7f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .container {
+      margin-top: 50px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3d5a80;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #293241;
+    }
+
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 200px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #3d5a80;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>My Diary</h1>
+
+    <label for="date">Date</label>
+    <input type="date" id="date">
+
+    <label for="thoughts">Write your thoughts</label>
+    <textarea id="thoughts" placeholder="Write what's on your mind..."></textarea>
+
+    <button>Save</button>
+  </div>
+
+</body>
+</html>
